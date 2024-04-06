@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "title": "Off-White",
+        "img": "https://example.com/image1.jpg",
+        "price": 775,
+        "info": "Out Of Office 'Ooo' sneakers",
+        "type": "Spring"
+    },
+    {
+        "id": 2,
+        "title": "Nike",
+        "img": "https://example.com/image2.jpg",
+        "price": 200,
+        "info": "Nike Air Force Premium",
+        "type": "Summer"
+    },
+    {
+        "id": 3,
+        "title": "Nike",
+        "img": "https://example.com/image3.jpg",
+        "price": 98.23,
+        "info": "Nike Air Force Premium",
+        "type": "Autumn"
+    },
+    {
+        "id": 4,
+        "title": "Adidas",
+        "img": "https://example.com/image4.jpg",
+        "price": 98.99,
+        "info": "DAILY 3.0 SHOES",
+        "type": "Winter"
+    }
+]
+
+
+
