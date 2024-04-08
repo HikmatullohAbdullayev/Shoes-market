@@ -1,9 +1,22 @@
-import React from 'react';
 
-function MainLayout(props) {
+import Footer from "./Footer";
+import Header from "./Header";
+import {Outlet} from "react-router-dom"
+
+
+function MainLayout() {
     return (
         <div>
-            MainLayout
+            <div className="wrapper">
+        <div className="box">
+          <header className="container">
+          <Header />
+          </header>
+          <span className="line"></span>
+          <Outlet/>
+        </div>
+        <Footer />
+      </div>
             
         </div>
     );
