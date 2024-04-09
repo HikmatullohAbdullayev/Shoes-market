@@ -1,6 +1,6 @@
-import React from 'react';
 
-function CheckOut(props) {
+
+function CheckOut() {
     return (
         <div>
             CheckOut

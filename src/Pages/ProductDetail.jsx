@@ -1,6 +1,6 @@
-import React from 'react';
 
-function ProductDetail(props) {
+
+function ProductDetail() {
     return (
         <div>
             ProductDetail
@@ -10,4 +10,3 @@ function ProductDetail(props) {
 }
 
 export default ProductDetail;
-ProductDetail
