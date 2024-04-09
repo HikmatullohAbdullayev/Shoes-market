@@ -1,11 +1,12 @@
 import Hero from "./components/Hero";
+import ProductList from "./components/ProductList";
 
 
 function Home() {
     return (
         <div>
             <Hero/>
-            Home
+            <ProductList/>
             
         </div>
     );
