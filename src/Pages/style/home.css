@@ -108,14 +108,17 @@ font-weight: 700;
 }
 
 .card_list {
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
+    
     flex-wrap: wrap;
     gap:24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+   
 
 }
 .card_item {
+    margin: 0 auto;
+    max-width: 262px;
 }
 .card_img_block {
     max-width: 261px;
