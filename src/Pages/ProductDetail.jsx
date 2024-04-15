@@ -3,12 +3,28 @@ import product from "../data/db.json"
 
 function ProductDetail() {
     const { id } = useParams()
+
+        let targetProduct = null;
+    
+        product.forEach(item => {
+            if (item.id === id) {
+                targetProduct = { ...item };
+            }
+        });
+    
+    console.log(targetProduct);
+
     return (
-        <div>
-            {`ProductDetail + ${id}`}
-            <h2>{`${product[0].title}`}</h2>
+        <section>
+            <div className="product">
+                <div className="product_img_block">
+                    <img className="product_img" src={targetProduct.img} alt={targetProduct.title} />
+                </div>
+            </div>
             
-        </div>
+            
+            
+        </section>
     );
 }
 
