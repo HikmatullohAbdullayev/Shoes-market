@@ -6,40 +6,53 @@ import { useState } from "react";
 
 
 function ProductDetail() {
-    
- 
-    const { id } = useParams()
+    const [dataProduct, setDataProduct] = useState([]);
+    const { id } = useParams();
   
-
-        let targetProduct = null;
-    
-        product.forEach(item => {
-            if (item.id === id) {
-                targetProduct = { ...item };
-            }
-        });
-    
-    // console.log(targetProduct);
-
-    const [count, setCount] = useState(1)
-
+    let targetProduct = null;
+  
+    // Tanlangan maxsulotni topish
+    product.forEach((item) => {
+      if (item.id === id) {
+        targetProduct = { ...item };
+      }
+    });
+  
+    const [count, setCount] = useState(1);
+  
     const inc = () => {
-        setCount((preview) => preview += 1)
-        
-    }
+      setCount((prev) => prev + 1);
+    };
+  
     const dec = () => {
-        setCount((preview) => preview > 1 ? preview -= 1 : preview = 1 )
-        
-    }
-    let saveProduct = {}
-    const addProduct = () =>{
-        saveProduct = {
-            ...targetProduct,
-            count:count
-        }
-
-        console.log(saveProduct);
-    }
+      setCount((prev) => (prev > 1 ? prev - 1 : prev));
+    };
+  
+    const addProduct = () => {
+      const newProduct = {
+        ...targetProduct,
+        count: count,
+      };
+  
+      // localStorage dan mavjud maxsulotlarni olish
+      const cartProduct = JSON.parse(localStorage.getItem("cart")) || [];
+  
+      // Yangi maxsulotni qo'shish, agar hali mavjud bo'lmasa
+      const isProductAdd = cartProduct.find(
+        (item) => item.id === newProduct.id
+      );
+  
+      if (!isProductAdd) {
+        const updatedProducts = [...cartProduct, newProduct];
+        localStorage.setItem("cart", JSON.stringify(updatedProducts));
+        setDataProduct(updatedProducts);
+        console.log(updatedProducts);
+      } else {
+        console.log("Maxsulot allaqachon saqlangan!");
+      }
+    };
+  
+  
 
     return (
         <section className="container">
@@ -74,7 +87,7 @@ function ProductDetail() {
                 <div className="description_block">
                     <h3 className="description_title">Description</h3>
                     <span className="line"></span>
-                    <p className="description_text"></p>
+                    <p className="description_text">Energize your look with a fresh take on heritage adidas style. The adidas Daily 3.0 Shoes cut a classic profile with a modern suede upper. Your walk across campus or commute across town has never looked or felt this good.</p>
                     <ul className="list">
                         <li className="list_item">
                             <p className="item_text">
@@ -102,8 +115,8 @@ function ProductDetail() {
                     </ul>
                 </div>
 
-                <div className="product_detail_img">
-                    <img src="../../src/assets/img/shoe.png" alt="shoe img" />
+                <div className="product_detail_img_block">
+                    <img className="product_detail_img" src="../../src/assets/img/shoe.png" alt="shoe img" />
                 </div>
             </div>
             
@@ -114,3 +127,4 @@ function ProductDetail() {
 }
 
 export default ProductDetail;
+

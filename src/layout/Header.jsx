@@ -12,8 +12,10 @@ function Header() {
                 </Link>
             </div>
             <div className={style.header__buttons}>
+                <Link to="/check-out">
                 <span className={style.button_cart__icon}><CartIcon/></span>
                 <button className={style.button_cart__btn}> View Cart</button>
+                </Link>
             </div>
             
         </div>
