@@ -1,15 +1,13 @@
-import Hero from "./components/Hero";
-import ProductList from "./components/ProductList";
-
+import Hero from './components/Hero';
+import ProductList from './components/ProductList';
 
 function Home() {
-    return (
-        <div>
-            <Hero/>
-            <ProductList/>
-            
-        </div>
-    );
+  return (
+    <div>
+      <Hero />
+      <ProductList />
+    </div>
+  );
 }
 
 export default Home;

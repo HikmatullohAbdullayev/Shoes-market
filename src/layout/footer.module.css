@@ -1,0 +1,63 @@
+.footer {
+  background-color: #262626; /* footer fon rangi */
+  color: #ffffff; /* matn rangi */
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footerLeft,
+.footerCenter,
+.footerRight {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.footerLogo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.footerText {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footerCenter {
+  font-size: 14px;
+}
+
+.footerRight i {
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.footerRight span:hover {
+  color: #00aaff; /* ikonkalar hover effekti */
+  cursor: pointer;
+}
+
+@media (max-width: 780px) {
+  .footerContent {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

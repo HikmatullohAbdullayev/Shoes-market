@@ -1,56 +1,49 @@
 .header {
-    
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .header__img-Block {
-    width: 100px ;
+  width: 100px;
 }
 .img__blockImg {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .header__buttons {
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    gap: 10px;
-    padding-left:24px ;
-    padding-right: 24px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border: 1px solid #201B21;
-    border-radius: 8px;
-   
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 1px solid #201b21;
+  border-radius: 8px;
 }
-.header__buttons:hover{
-    background-color:#E9EBEE;
+.header__buttons:hover {
+  background-color: #e9ebee;
 }
-.header__buttons:active{
-    background-color:rgb(213, 211, 195);
+.header__buttons:active {
+  background-color: rgb(213, 211, 195);
 }
-.header__buttons:focus{
-    background-color:rgb(213, 211, 195);
+.header__buttons:focus {
+  background-color: rgb(213, 211, 195);
 }
-
 
 .button_cart__icon {
-    width: 15px;
-    
+  width: 15px;
 }
 .button_cart__btn {
-    color: rgb(32, 27, 33);
-font-family: Inter;
-font-size: 14px;
-font-weight: 700;
-line-height: 18px;
-letter-spacing: 0px;
-
+  color: rgb(32, 27, 33);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0px;
 }

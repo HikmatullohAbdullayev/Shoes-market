@@ -7,11 +7,9 @@
 }
 
 .product {
-    
 }
 
 .product_img_block {
-    
   max-width: 546px;
   height: auto;
 }
@@ -152,27 +150,26 @@
 }
 
 @media (max-width: 1024px) {
-
-.product_img{
-  width: 400px;
-}
-  .product_cart{
+  .product_img {
+    width: 400px;
+  }
+  .product_cart {
     max-width: 350px;
     gap: 0px;
   }
 }
 @media (max-width: 810px) {
-  .product_top{
+  .product_top {
     flex-direction: column;
   }
-.product_img{
-  width: 100%;
- height: auto;
-}
-.product_img_block{
-  margin: 0 auto;
-}
-  .product_cart{
+  .product_img {
+    width: 100%;
+    height: auto;
+  }
+  .product_img_block {
+    margin: 0 auto;
+  }
+  .product_cart {
     margin: 0 auto;
     max-width: 550px;
     gap: 0px;
@@ -180,7 +177,6 @@
 }
 
 /* =====PRODUCT-BLOCK-END===== */
-
 
 /* =====PRODUCT-INFO-START===== */
 
@@ -190,33 +186,32 @@
   padding-top: 60px;
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   gap: 50px;
-  
 }
 .description_block {
   max-width: 540px;
 }
 .description_title {
   color: rgb(32, 27, 33);
-font-family: DM Sans;
-font-size: 24px;
-font-weight: 700;
-line-height: 32px;
-letter-spacing: -0.5px;
-text-align: left;
+  font-family: DM Sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-align: left;
 }
 .line {
 }
 .description_text {
   padding-top: 20px;
   color: rgb(103, 105, 110);
-font-family: Inter;
-font-size: 18px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0px;
-text-align: left;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
 }
 .list {
   padding-top: 20px;
@@ -238,14 +233,13 @@ text-align: left;
   max-width: 530px;
 }
 .product_detail_img {
- width: 100%;
+  width: 100%;
 }
 @media (max-width: 1024px) {
-  .product_detail{
+  .product_detail {
     flex-direction: column;
   }
-.product_detail_img_block{
-  margin: 0 auto;
-}
-
+  .product_detail_img_block {
+    margin: 0 auto;
+  }
 }

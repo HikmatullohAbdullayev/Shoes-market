@@ -1,0 +1,91 @@
+.summary {
+  width: 460px;
+  max-width: 100%;
+  border-radius: 20px;
+  padding: 16px 24px;
+  box-shadow: 0px 4.44px 66.67px 0px rgba(0, 0, 0, 0.08);
+  background: rgb(255, 255, 255);
+  margin-top: 40px;
+}
+.summary_title {
+  color: rgb(32, 27, 33);
+  font-family: DM Sans;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1px;
+  text-align: left;
+}
+.summary_container {
+  display: grid;
+  gap: 16px;
+}
+.summary_subtotal,
+.summary_shipping,
+.summary_tax,
+.span_price {
+  color: rgb(32, 27, 33);
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+}
+.price_box {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.span_price_discount {
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  color: red;
+}
+
+.summary_discount {
+  color: rgb(32, 27, 33);
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+}
+.summary_total {
+  margin-top: 14px;
+  color: rgb(32, 27, 33);
+  font-family: DM Sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+.summary_checkout {
+  display: inline-block;
+  width: 100%;
+  margin-top: 14px;
+  border-radius: 10px;
+  background: rgb(32, 27, 33);
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.btn_Text {
+  text-align: center;
+  padding: 22px 0px;
+}
+
+@media (max-width: 960px) {
+  .summary {
+    margin: 0 auto;
+    max-width: 740px;
+    width: 100%;
+  }
+}

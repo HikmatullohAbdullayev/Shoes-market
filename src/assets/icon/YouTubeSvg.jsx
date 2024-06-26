@@ -8,7 +8,7 @@ const SVGComponent = (props) => (
     xmlnsXlink="http://www.w3.org/1999/xlink"
     {...props}
   >
-    <desc>{"\n\t\t\tCreated with Pixso.\n\t"}</desc>
+    <desc>{'\n\t\t\tCreated with Pixso.\n\t'}</desc>
     <defs />
     <path
       id="Path"
